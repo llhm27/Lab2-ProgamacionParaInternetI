@@ -1,16 +1,551 @@
-/*ESTILOS GENERALES*/
+/* =========================================================
+PROYECTO: TURISMO DE HONDURAS
+Archivo: assets/css/style.css
+Responsables: Leany - Integración
+            Angeluz - diseño
+========================================================= */
+
+/* =========================================================
+
+1. CONFIGURACIÓN GENERAL
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+background-color: #f4f7f8;
+color: #333;
+}
+
+/* =========================================================
+2. ENCABEZADO
+========================================================= */
+
+header {
+background: linear-gradient(135deg, #0077b6, #00a896);
+color: white;
+text-align: center;
+padding: 35px 20px;
+}
+
+header h1 {
+font-size: 2.5rem;
+margin-bottom: 10px;
+}
+
+header p {
+font-size: 1.1rem;
+margin-bottom: 20px;
+}
+
+/* =========================================================
+3. MENÚ DE NAVEGACIÓN
+========================================================= */
+
+header nav {
+margin-top: 20px;
+}
+
+header nav ul {
+list-style: none;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+header nav ul li a {
+display: block;
+color: white;
+text-decoration: none;
+padding: 10px 16px;
+border-radius: 5px;
+background-color: rgba(255, 255, 255, 0.15);
+transition: background-color 0.3s ease,
+transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+background-color: rgba(255, 255, 255, 0.3);
+transform: translateY(-2px);
+}
+
+/* =========================================================
+4. ÍNDICE DE CONTENIDOS
+========================================================= */
+
+.indice {
+width: min(350px, 90%);
+margin: 30px auto;
+padding: 20px;
 
 
-/*ENCABEZADO*/
+border: 1px solid #a2a9b1;
+border-radius: 5px;
+
+background-color: #f8f9fa;
+
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
 
 
-/*NAVEGACIÓN*/
+}
+
+.indice h2 {
+text-align: center;
+font-size: 1.3rem;
+margin-bottom: 15px;
+padding-bottom: 10px;
 
 
-/*CONTENIDO PRINCIPAL*/
+border-bottom: 1px solid #a2a9b1;
 
 
-/*ASIDE*/
+}
+
+.indice ol {
+padding-left: 25px;
+}
+
+.indice li {
+margin: 8px 0;
+}
+
+.indice a {
+color: #0645ad;
+text-decoration: none;
+}
+
+.indice a:hover {
+text-decoration: underline;
+}
+
+/* =========================================================
+5. CONTENIDO PRINCIPAL
+========================================================= */
+
+main {
+width: min(1200px, 90%);
+margin: 0 auto;
+}
+
+section {
+margin: 40px 0;
+padding: 30px;
 
 
-/*FOOTER*/
+background-color: white;
+
+border-radius: 10px;
+
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+
+
+}
+
+section h2 {
+color: #0077b6;
+font-size: 2rem;
+margin-bottom: 20px;
+
+
+border-bottom: 2px solid #00a896;
+padding-bottom: 10px;
+
+
+}
+
+/* =========================================================
+6. SECCIÓN INICIO
+========================================================= */
+
+#inicio {
+text-align: center;
+padding: 50px 30px;
+}
+
+#inicio h2 {
+border-bottom: none;
+font-size: 2.5rem;
+}
+
+#inicio p {
+max-width: 800px;
+margin: 0 auto;
+font-size: 1.1rem;
+}
+
+/* =========================================================
+7. DESTINOS TURÍSTICOS
+========================================================= */
+
+/*
+Si Gaudy utiliza:
+
+   <div class="destinos-container">
+       <article class="destino">...</article>
+       <article class="destino">...</article>
+   </div>
+*/
+
+.destinos-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.destino {
+background-color: #f8f9fa;
+border: 1px solid #ddd;
+border-radius: 10px;
+overflow: hidden;
+
+ 
+transition: transform 0.3s ease,
+            box-shadow 0.3s ease;
+ 
+
+}
+
+.destino:hover {
+transform: translateY(-5px);
+
+ 
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+ 
+
+}
+
+.destino img {
+width: 100%;
+height: 220px;
+object-fit: cover;
+}
+
+.destino h3 {
+color: #0077b6;
+margin: 15px 20px 10px;
+}
+
+.destino p {
+margin: 0 20px 20px;
+}
+
+/* =========================================================
+8. MULTIMEDIA
+========================================================= */
+
+#multimedia {
+text-align: center;
+}
+
+#multimedia audio {
+width: min(600px, 100%);
+margin: 15px auto;
+}
+
+#multimedia video {
+display: block;
+
+ 
+width: min(800px, 100%);
+max-height: 500px;
+
+margin: 20px auto;
+
+border-radius: 10px;
+
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+ 
+
+}
+
+/* =========================================================
+9. INDICADORES TURÍSTICOS
+========================================================= */
+
+.indicadores-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+}
+
+.indicador {
+padding: 25px;
+
+ 
+background-color: #f8f9fa;
+
+border: 1px solid #ddd;
+border-radius: 10px;
+
+text-align: center;
+ 
+
+}
+
+.indicador h3 {
+color: #0077b6;
+margin-bottom: 15px;
+}
+
+.indicador p {
+margin-bottom: 10px;
+}
+
+/* Barra de progreso */
+
+progress {
+width: 100%;
+height: 25px;
+}
+
+/* =========================================================
+10. FORMULARIO
+========================================================= */
+
+#formulario {
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+}
+
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+form label {
+font-weight: bold;
+color: #333;
+}
+
+form input,
+form textarea,
+form select {
+width: 100%;
+
+ 
+padding: 12px;
+
+font-family: inherit;
+font-size: 1rem;
+
+border: 1px solid #bbb;
+border-radius: 5px;
+
+background-color: white;
+
+transition: border-color 0.3s ease,
+            box-shadow 0.3s ease;
+ 
+
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+outline: none;
+
+ 
+border-color: #0077b6;
+
+box-shadow: 0 0 0 3px rgba(0, 119, 182, 0.15);
+ 
+
+}
+
+form textarea {
+min-height: 150px;
+resize: vertical;
+}
+
+form button {
+padding: 12px 20px;
+
+ 
+border: none;
+border-radius: 5px;
+
+background-color: #0077b6;
+color: white;
+
+font-size: 1rem;
+font-weight: bold;
+
+cursor: pointer;
+
+transition: background-color 0.3s ease,
+            transform 0.2s ease;
+ 
+
+}
+
+form button:hover {
+background-color: #005f8a;
+transform: translateY(-2px);
+}
+
+/* =========================================================
+11. INFORMACIÓN ADICIONAL
+========================================================= */
+
+aside {
+width: min(1000px, 90%);
+
+ 
+margin: 40px auto;
+
+padding: 25px;
+
+background-color: #e7f5f7;
+
+border-left: 5px solid #00a896;
+
+border-radius: 5px;
+ 
+
+}
+
+aside h3 {
+color: #0077b6;
+margin-bottom: 10px;
+font-size: 1.4rem;
+}
+
+/* =========================================================
+12. FOOTER
+========================================================= */
+
+footer {
+margin-top: 50px;
+
+ 
+padding: 30px 20px;
+
+background-color: #023047;
+
+color: white;
+
+text-align: center;
+ 
+
+}
+
+footer p {
+margin: 5px 0;
+}
+
+footer p:first-child {
+font-weight: bold;
+}
+
+/* =========================================================
+13. ENLACES Y SECCIONES
+========================================================= */
+
+/*
+Evita que el encabezado quede oculto
+cuando se utiliza un enlace interno.
+*/
+
+section,
+aside {
+scroll-margin-top: 20px;
+}
+
+/* =========================================================
+14. RESPONSIVE - TABLETS
+========================================================= */
+
+@media (max-width: 900px) {
+
+ 
+.destinos-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.indicadores-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header h1 {
+    font-size: 2.2rem;
+}
+ 
+
+}
+
+/* =========================================================
+15. RESPONSIVE - CELULARES
+========================================================= */
+
+@media (max-width: 600px) {
+
+ 
+header {
+    padding: 25px 15px;
+}
+
+header h1 {
+    font-size: 1.9rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+header nav ul {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+header nav ul li a {
+    text-align: center;
+}
+
+main {
+    width: 94%;
+}
+
+section {
+    padding: 20px;
+    margin: 25px 0;
+}
+
+section h2 {
+    font-size: 1.6rem;
+}
+
+#inicio h2 {
+    font-size: 2rem;
+}
+
+.destinos-container {
+    grid-template-columns: 1fr;
+}
+
+.indicadores-container {
+    grid-template-columns: 1fr;
+}
+
+.indice {
+    width: 94%;
+}
+
+aside {
+    width: 94%;
+}
+ 
+
+}
