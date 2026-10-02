@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro Turístico | Descubre Honduras</title>
+
+    <!-- CSS exclusivo del formulario -->
+    <link rel="stylesheet" href="assets/css/formulario.css">
+</head>
+
+<body>
+
+    <!-- ==========================================
+         ENCABEZADO DEL FORMULARIO
+         ========================================== -->
+
+    <header class="form-header">
+
+        <div class="header-overlay">
+
+            <div class="logo">
+                HN
+            </div>
+
+            <h1>Registro Turístico</h1>
+
+            <p>
+                Planifica tu próxima aventura por Honduras
+            </p>
+            
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         CONTENIDO PRINCIPAL
+         ========================================== -->
+
+    <main class="form-container">
+
+        <p class="intro">
+            Completa el siguiente formulario para registrar
+            tu próxima experiencia turística en Honduras.
+        </p>
+
+
+        <!-- ==========================================
+             FORMULARIO
+             ========================================== -->
+
+        <form action="#" method="post">
+
+
+            <!-- ======================================
+                 INFORMACIÓN PERSONAL
+                 ====================================== -->
+
+            <section class="form-section">
+
+                <h2>Información personal</h2>
+
+                <div class="form-grid">
+
+                    <!-- Nombre -->
+
+                    <div class="form-group">
+
+                        <label for="nombre">
+                            Nombre <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresa tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Apellido -->
+
+                    <div class="form-group">
+
+                        <label for="apellido">
+                            Apellido <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            placeholder="Ingresa tu apellido"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- Correo -->
+
+                <div class="form-group">
+
+                    <label for="correo">
+                        Correo electrónico <span>*</span>
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Teléfono -->
+
+                <div class="form-group">
+
+                    <label for="telefono">
+                        Número de teléfono <span>*</span>
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        placeholder="+504 0000-0000"
+                        required
+                    >
+
+                </div>
+
+            </section>
+
+
+            <!-- ======================================
+                 INFORMACIÓN DEL VIAJE
+                 ====================================== -->
+
+            <section class="form-section">
+
+                <h2>Información del viaje</h2>
+
+                <!-- Fecha -->
+
+                <div class="form-group">
+
+                    <label for="fecha">
+                        Fecha preferida del viaje <span>*</span>
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Destino -->
+
+                <div class="form-group">
+
+                    <label for="destino">
+                        Destino turístico <span>*</span>
+                    </label>
+
+                    <select
+                        id="destino"
+                        name="destino"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona un destino
+                        </option>
+
+                        <option value="roatan">
+                            Roatán
+                        </option>
+
+                        <option value="utila">
+                            Utila
+                        </option>
+
+                        <option value="copan">
+                            Copán Ruinas
+                        </option>
+
+                        <option value="lago-yojoa">
+                            Lago de Yojoa
+                        </option>
+
+                        <option value="la-ceiba">
+                            La Ceiba
+                        </option>
+
+                        <option value="pico-bonito">
+                            Parque Nacional Pico Bonito
+                        </option>
+
+                        <option value="otros">
+                            Otro destino
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Número de participantes -->
+
+                <div class="form-group">
+
+                    <label for="participantes">
+                        Número de participantes <span>*</span>
+                    </label>
+
+                    <input
+                        type="number"
+                        id="participantes"
+                        name="participantes"
+                        min="1"
+                        max="50"
+                        placeholder="Ej. 4"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Tipo de turismo -->
+
+                <div class="form-group">
+
+                    <label for="tipo-turismo">
+                        Tipo de turismo
+                    </label>
+
+                    <select
+                        id="tipo-turismo"
+                        name="tipo-turismo"
+                    >
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option value="playa">
+                            Turismo de playa
+                        </option>
+
+                        <option value="naturaleza">
+                            Turismo de naturaleza
+                        </option>
+
+                        <option value="cultural">
+                            Turismo cultural
+                        </option>
+
+                        <option value="aventura">
+                            Turismo de aventura
+                        </option>
+
+                        <option value="historico">
+                            Turismo histórico
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Solicitudes especiales -->
+
+                <div class="form-group">
+
+                    <label for="solicitudes">
+                        Solicitudes o preferencias especiales
+                    </label>
+
+                    <textarea
+                        id="solicitudes"
+                        name="solicitudes"
+                        placeholder="Escribe aquí cualquier solicitud o preferencia..."
+                    ></textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- ======================================
+                 INFORMACIÓN ADICIONAL
+                 ====================================== -->
+
+            <section class="form-section">
+
+                <h2>Información adicional</h2>
+
+                <p class="help-text">
+                    Esta información nos ayudará a conocer
+                    mejor tus preferencias para tu experiencia
+                    turística en Honduras.
+                </p>
+
+
+                <div class="checkbox-group">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="informacion"
+                            value="informacion"
+                        >
+                        Deseo recibir información sobre destinos turísticos.
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="ofertas"
+                            value="ofertas"
+                        >
+                        Deseo recibir novedades sobre actividades turísticas.
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- ======================================
+                 BOTONES
+                 ====================================== -->
+
+            <div class="form-buttons">
+
+                <button
+                    type="reset"
+                    class="btn btn-secondary"
+                >
+                    Limpiar formulario
+                </button>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+                    Enviar registro
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 - Descubre Honduras
+        </p>
+
+        <p>
+            Proyecto de Programación para Internet I - UCENM
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
