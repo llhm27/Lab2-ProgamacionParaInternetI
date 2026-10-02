@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de Experiencia | Descubre Honduras</title>
+
+    <!-- CSS compartido con el formulario principal -->
+    <link rel="stylesheet" href="assets/css/formulario.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         ENCABEZADO
+         ================================================== -->
+
+    <header class="form-header">
+
+        <div class="header-overlay">
+
+            <div class="logo">
+                HN
+            </div>
+
+            <h1>
+                Comparte tu experiencia
+            </h1>
+
+            <p>
+                Cuéntanos cómo fue tu visita por Honduras
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         CONTENIDO PRINCIPAL
+         ================================================== -->
+
+    <main class="form-container">
+
+
+        <p class="intro">
+
+            Tu opinión es importante para nosotros.
+            Completa este formulario y comparte tu experiencia
+            turística en Honduras.
+
+        </p>
+
+
+
+        <!-- ==================================================
+             FORMULARIO
+             ================================================== -->
+
+        <form action="#" method="post">
+
+
+            <!-- ==================================================
+                 INFORMACIÓN DEL VISITANTE
+                 ================================================== -->
+
+            <section class="form-section">
+
+                <h2>
+                    Información del visitante
+                </h2>
+
+
+                <div class="form-grid">
+
+
+                    <!-- Nombre -->
+
+                    <div class="form-group">
+
+                        <label for="nombre">
+
+                            Nombre
+                            <span>*</span>
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Ingresa tu nombre"
+                            required
+                        >
+
+                    </div>
+
+
+
+                    <!-- Apellido -->
+
+                    <div class="form-group">
+
+                        <label for="apellido">
+
+                            Apellido
+                            <span>*</span>
+
+                        </label>
+
+                        <input
+                            type="text"
+                            id="apellido"
+                            name="apellido"
+                            placeholder="Ingresa tu apellido"
+                            required
+                        >
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- Correo -->
+
+                <div class="form-group">
+
+                    <label for="correo">
+
+                        Correo electrónico
+
+                    </label>
+
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        placeholder="ejemplo@correo.com"
+                    >
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 INFORMACIÓN DE LA VISITA
+                 ================================================== -->
+
+            <section class="form-section">
+
+                <h2>
+                    Información de tu visita
+                </h2>
+
+
+
+                <!-- Destino -->
+
+                <div class="form-group">
+
+                    <label for="destino">
+
+                        ¿Qué destino visitaste?
+                        <span>*</span>
+
+                    </label>
+
+
+                    <select
+                        id="destino"
+                        name="destino"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona un destino
+                        </option>
+
+                        <option value="roatan">
+                            Roatán
+                        </option>
+
+                        <option value="utila">
+                            Utila
+                        </option>
+
+                        <option value="copan">
+                            Copán Ruinas
+                        </option>
+
+                        <option value="lago-yojoa">
+                            Lago de Yojoa
+                        </option>
+
+                        <option value="la-ceiba">
+                            La Ceiba
+                        </option>
+
+                        <option value="pico-bonito">
+                            Parque Nacional Pico Bonito
+                        </option>
+
+                        <option value="otro">
+                            Otro
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Fecha -->
+
+                <div class="form-group">
+
+                    <label for="fecha">
+
+                        Fecha de visita
+                        <span>*</span>
+
+                    </label>
+
+                    <input
+                        type="date"
+                        id="fecha"
+                        name="fecha"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- Tipo de turismo -->
+
+                <div class="form-group">
+
+                    <label for="tipo-turismo">
+
+                        Tipo de experiencia
+
+                    </label>
+
+
+                    <select
+                        id="tipo-turismo"
+                        name="tipo-turismo"
+                    >
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option value="playa">
+                            Playa
+                        </option>
+
+                        <option value="naturaleza">
+                            Naturaleza
+                        </option>
+
+                        <option value="aventura">
+                            Aventura
+                        </option>
+
+                        <option value="cultural">
+                            Cultura
+                        </option>
+
+                        <option value="historico">
+                            Historia
+                        </option>
+
+                        <option value="gastronomia">
+                            Gastronomía
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 VALORACIÓN
+                 ================================================== -->
+
+            <section class="form-section">
+
+                <h2>
+                    Valora tu experiencia
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label for="calificacion">
+
+                        ¿Cómo calificarías tu experiencia?
+                        <span>*</span>
+
+                    </label>
+
+
+                    <select
+                        id="calificacion"
+                        name="calificacion"
+                        required
+                    >
+
+                        <option value="">
+                            Selecciona una calificación
+                        </option>
+
+                        <option value="5">
+                            ⭐⭐⭐⭐⭐ Excelente
+                        </option>
+
+                        <option value="4">
+                            ⭐⭐⭐⭐ Muy buena
+                        </option>
+
+                        <option value="3">
+                            ⭐⭐⭐ Buena
+                        </option>
+
+                        <option value="2">
+                            ⭐⭐ Regular
+                        </option>
+
+                        <option value="1">
+                            ⭐ Mala
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- Recomendar -->
+
+                <div class="form-group">
+
+                    <label for="recomendar">
+
+                        ¿Recomendarías este destino?
+
+                    </label>
+
+
+                    <select
+                        id="recomendar"
+                        name="recomendar"
+                    >
+
+                        <option value="">
+                            Selecciona una opción
+                        </option>
+
+                        <option value="si">
+                            Sí
+                        </option>
+
+                        <option value="talvez">
+                            Tal vez
+                        </option>
+
+                        <option value="no">
+                            No
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 COMENTARIOS
+                 ================================================== -->
+
+            <section class="form-section">
+
+                <h2>
+                    Comparte tu experiencia
+                </h2>
+
+
+                <div class="form-group">
+
+                    <label for="experiencia">
+
+                        Cuéntanos sobre tu experiencia
+                        <span>*</span>
+
+                    </label>
+
+
+                    <textarea
+                        id="experiencia"
+                        name="experiencia"
+                        placeholder="Cuéntanos qué fue lo que más te gustó de tu visita, qué actividades realizaste o qué lugares recomendarías..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- Aspectos destacados -->
+
+                <div class="form-group">
+
+                    <label for="aspectos">
+
+                        ¿Qué fue lo que más te gustó?
+
+                    </label>
+
+
+                    <textarea
+                        id="aspectos"
+                        name="aspectos"
+                        placeholder="Describe los aspectos que más disfrutaste..."
+                    ></textarea>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 PREFERENCIAS
+                 ================================================== -->
+
+            <section class="form-section">
+
+                <h2>
+                    Preferencias y recomendaciones
+                </h2>
+
+
+                <p class="help-text">
+
+                    Selecciona los aspectos que consideres
+                    importantes de tu experiencia.
+
+                </p>
+
+
+                <div class="checkbox-group">
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="preferencias"
+                            value="naturaleza"
+                        >
+
+                        Naturaleza y paisajes
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="preferencias"
+                            value="cultura"
+                        >
+
+                        Cultura e historia
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="preferencias"
+                            value="gastronomia"
+                        >
+
+                        Gastronomía
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="preferencias"
+                            value="aventura"
+                        >
+
+                        Actividades de aventura
+
+                    </label>
+
+
+
+                    <label>
+
+                        <input
+                            type="checkbox"
+                            name="preferencias"
+                            value="playas"
+                        >
+
+                        Playas y actividades acuáticas
+
+                    </label>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ==================================================
+                 BOTONES
+                 ================================================== -->
+
+            <div class="form-buttons">
+
+
+                <button
+                    type="reset"
+                    class="btn btn-secondary"
+                >
+
+                    Limpiar formulario
+
+                </button>
+
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                >
+
+                    Enviar experiencia
+
+                </button>
+
+
+            </div>
+
+
+        </form>
+
+
+    </main>
+
+
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
+    <footer>
+
+        <p>
+            &copy; 2026 - Descubre Honduras
+        </p>
+
+        <p>
+            Proyecto de Programación para Internet I - UCENM
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
