@@ -292,7 +292,10 @@ text-align: center;
  
 
 }
-
+.centrar{
+   display: flex;
+   justify-content: center;
+}
 .indicador h3 {
 color: #0077b6;
 margin-bottom: 15px;
