@@ -269,6 +269,28 @@ box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 
 }
 
+/* Estilos para hacer las gráficas responsivas y nítidas */
+.graficas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.centrar {
+    width: 100%;
+    max-width: 800px; /* Limita el ancho máximo para que no se expandan demasiado */
+    text-align: center;
+}
+
+.img-responsive {
+    width: 100%;
+    height: auto; /* Mantiene la proporción original de la imagen sin estirarla */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una ligera sombra elegante */
+}
+
 /* =========================================================
 9. INDICADORES TURÍSTICOS
 ========================================================= */
